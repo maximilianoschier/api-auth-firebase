@@ -64,7 +64,7 @@ export default createStore({
     },
     async ingresoUsuario({ commit }, usuario) {
       try {
-        const res = await fetch('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyC8KWL0oWk4k5RIBp6mNRbsLEQLnUkPsoo', {
+        const res = await fetch('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=*/API-KEY/*', {
           method: 'POST',
           body: JSON.stringify({
             email: usuario.email,
